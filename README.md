@@ -18,7 +18,7 @@ Windows:
 
 ```powershell
 $ iwr -uri https://github.com/twitchax/augre/releases/latest/download/augre_x86_64-pc-windows-gnu.zip -OutFile "augre_x86_64-pc-windows-gnu.zip"
-$ Expand-Archive augre_x86_64-pc-windows-gnu.zip -DestinationPath C:\Users\%USERNAME%\AppData\Local\Programs\augre
+$ Expand-Archive augre_x86_64-pc-windows-gnu.zip -DestinationPath "$env:LOCALAPPDATA\Programs\augre"
 ```
 
 Mac OS (Apple Silicon):
